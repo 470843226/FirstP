@@ -1,0 +1,59 @@
+h1 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+a{
+	text-decoration: none;
+	color: #666;
+}
+.main .carType{
+	margin-bottom:20px; 
+	width:100%;
+	float: left;
+}
+.main .carType span{
+	font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    float: left;
+    width: 50px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #999;
+}
+.main .carType .box{
+	float: left;
+	width: 1000px;
+	margin-left:20px; 
+}
+.main .carType .box .cont{
+    float: left;
+	width: 100%;
+
+}
+.main .carType .box .car{
+	float: left;
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.main .carType .box .type{
+	float: left;
+	margin-bottom:20px; 
+}
+.main .carType .box .type a{
+	margin-right: 15px;
+    color: #666;
+    line-height: 30px;
+    font-size: 14px;
+    float: left;
+}
+a:hover,.main .carType .box .type a:hover{
+	color: #ff571a;
+}

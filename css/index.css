@@ -1,0 +1,266 @@
+/*轮播图*/
+.banner{
+	position:relative;
+	height:460px;
+}
+.banner:hover i{
+	opacity:.5;
+}
+.banner a{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-size:100% 100%;
+}
+.banner .current{
+	z-index:1;
+}
+.banner i{
+	position:absolute;
+	top:208px;
+	width:25px;
+	height:44px;
+	z-index:1;
+	opacity:0;
+	transition:opacity .5s;
+}
+.banner i:hover{
+	opacity:1;
+}
+.banner .previous{
+	left:66px;
+	background-position:0 -37px;
+}
+.banner .next{
+	right:66px;
+	background-position:-26px -37px;
+}
+/*页中导航*/
+.nav{
+	height:119px;
+	border:1px solid rgb(217, 217, 217);
+	padding:20px;
+}
+.nav .w1200 .left{
+	float: left;
+	width: 399px;
+	border-right: 1px solid #eee;
+}
+.nav .w1200 .center{
+	float: left;
+	width: 399px;
+	border-right: 1px solid #eee;
+}
+.nav .w1200 .right{
+	float: left;
+	width: 290px;
+}
+.nav .w1200 div p{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+    padding-left: 24px;
+    font-weight: bold;
+}
+.nav .w1200 ul{
+	float: left;
+	padding-left: 24px;
+}
+.nav .w1200 .left li{
+	float:left;
+	width: 46px;
+	height: 54px;
+}
+
+.nav .w1200 .left li img{
+	width: 32px;
+	height: 24px;
+	display: block;
+	margin: 0 auto;
+}
+.nav .w1200 a{
+	display: block;
+	width: 100%;	
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+.nav li:hover a{
+	cursor: pointer;
+	color: #ff571a;
+
+}
+.nav .w1200 .center li{
+	list-style: none;
+	float:left;
+	width: 53px;
+	height: 54px;
+}
+.nav .w1200 .center li:hover div,  .nav .w1200 .center li:hover a{
+	color: #ff571a;
+	cursor: pointer;
+	
+}
+.nav .w1200 .center li div{
+	width: 50px;
+	height: 20px;
+    margin: 0 auto;
+
+}
+.nav .w1200 .center li a{
+display: block;
+	width: 100%;	
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+
+.nav .w1200 .right li{
+	list-style: none;
+	float:left;
+	width: 53px;
+	
+	
+}
+
+.nav .w1200 .right li a{
+	float: left;
+	width: 100%;	
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+	margin: 5px;
+	text-align: center;
+}
+.nav .w1200 .right li a:hover{
+	color: #ff571a;
+	
+}
+/*主体内容*/
+.main{
+	padding-top:90px;
+	overflow:hidden;
+	background-color:rgb(242, 242, 242);
+}
+.main .w1200{
+	overflow:hidden;
+}
+.main h1{
+	text-align:center;
+	font-size:32px;
+	color:rgb(51, 51, 51);
+}
+.main p{
+	color:rgb(153, 153, 153);
+}
+.main > p, .product > p{
+	margin:20px 0 42px;
+	text-align:center;
+}
+.main .container{
+	width:1220px;
+}
+.main .container a{
+	float:left;
+	margin:40px 30px 0 10px;
+	padding-left:285px;
+	width:285px;
+	height:240px;
+	background-color:white;
+	background-repeat:no-repeat;
+	text-align:center;
+}
+.main .container a:hover{
+	box-shadow:0 4px 8px 0 rgb(182, 182, 182);
+}
+.main .container a:hover h2{
+	color:rgb(255, 88, 26);
+}
+.main .container a:hover img{
+	margin-left:-10px;
+}
+.main .container a h2{
+	margin-top:34px;
+	font-size:20px;
+	color:rgb(68, 68, 68);
+}
+.main .container a p{
+	margin-top:16px;
+	font-size:14px;
+}
+.main .container a img{
+	margin-top:45px;
+	width:160px;
+	height:105px;
+	transition:margin-left .25s;
+}
+.main .product{
+	margin-top:80px;
+	padding-top:82px;
+	height:390px;
+	background-color:white;
+}
+
+.main .product .w1200 div{
+	width: 335px;
+	height: 180px;
+	float: left;
+	padding: 10px 32px 0 32px;
+	border-right: 1px solid #E6E6E6;
+	position: relative;
+	margin-top:20px; 
+
+}
+.main .product img{
+	float: left;
+    width: 64px;
+    height: 64px;
+}
+.main .product .p1{
+	font-size: 20px;
+    color: #333333;
+    margin-top:4px; 
+    margin-left: 84px;
+}
+.main .product .p2{
+	margin-top: 16px;
+    font-size: 14px;
+    color: #333333;
+    margin-left: 84px;
+
+}
+.main .product .p3{
+	float: left;
+	margin-top: 16px;
+	font-size: 12px;
+    line-height: 16px;
+    color: #999999;
+    width: 100%
+
+}
+.main .product .p4{
+	float: left;
+	font-size: 12px;
+    line-height: 16px;
+    color: #999999;
+    width: 100%
+
+}
+.main .product a{
+	color: #fd7240;
+	position: absolute;
+	bottom: 10px;
+	left: 32px;
+	font-size: 14px;
+
+}
+.font16{
+	font-size: 16px;
+}

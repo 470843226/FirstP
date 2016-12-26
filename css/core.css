@@ -1,0 +1,473 @@
+body{
+	padding-top:80px;
+}
+/*基础样式*/
+.w1200{
+	margin:0 auto;
+	width:1200px;
+}
+.w1280{
+	margin:0 auto;
+	width:1280px;
+	margin-top:20px; 
+}
+.icon{
+	background-image:url(../image/icon.png);
+}
+.icon2{
+	background-image:url(../image/icon2.png);
+}
+/*顶部导航*/
+.topNav{
+	top:0;
+	left:0;
+	padding:20px 0;
+	width:100%;
+	height:36px;
+	background-color:white;
+	border-top:4px solid rgb(255, 88, 26);
+	z-index: 2;
+}
+.logo{
+	float:left;
+	margin:0 18px 0 6px;
+	width:82px;
+	height:36px;
+	background-image:url(../image/logo.png);
+	background-size:100%; 
+}
+.area{
+	float:left;
+	margin:3px 50px 3px 0;
+	width:86px;
+	height:28px;
+	border:1px solid rgb(237, 237, 237);
+	border-radius:2px;
+}
+.area .chose{
+	display:block;
+	padding-left:23px;
+	height:28px;
+	line-height:28px;
+	font-size:14px;
+	color:rgb(102, 102, 102);
+	cursor:pointer;
+	position: relative;
+}
+.area .chose i{
+	position: absolute;
+	width: 10px;
+	height: 28px;
+	background: url(../image/city-chose.png) no-repeat 0 center;
+	right: 0;
+}
+.area .chose:hover + .fixedBox{
+	display: block;
+}
+.area .fixedBox:hover{
+	display: block;
+
+}
+.area .fixedBox{
+	
+	margin-left:-1px;
+	width:360px;
+	height:325px;
+	border:1px solid rgb(255, 88, 26);
+	display:none;
+	background: white;
+}
+.area .fixedBox .city{
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+}
+.area .fixedBox .city span{
+	width: 26px;
+	height: 28px;
+	float: left;
+	color: #777;
+	font-size: 13px;
+	padding-right: 15px;
+	line-height: 28px;
+
+}
+.area .fixedBox .city .title{
+	width: 320px;
+	height: 28px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ededed;
+	line-height: 28px;
+}
+.area .fixedBox .city .title a{
+	margin-left: 10px;
+	font-size: 13px;
+	color: #FF5719;
+}
+.area .fixedBox .city .line{
+	float: left;
+	width: 320px;
+}
+
+.area .fixedBox .city .line span{
+	border-right: 1px solid #ededed;
+}
+.area .fixedBox .city .line .Cline{
+	padding-left: 42px;
+	padding-right: 5px;
+	line-height: 28px;
+}
+.area .fixedBox .city .line .Cline a{
+	margin-left: 15px;
+	font-size: 13px; 
+}
+.topNav a{
+	color:rgb(51, 51, 51);
+}
+.topNav .anchor{
+	float:left;
+	margin-right:34px;
+	font-size:14px;
+	line-height:36px;
+	vertical-align:middle;
+}
+.topNav a.anchor:hover{
+	color:rgb(255, 88, 26);
+}
+.topNav div.anchor{
+	display:inline;
+	z-index: 3;
+	position: relative;
+}
+.topNav div.anchor:hover .service{
+	display: block;
+}
+.topNav div.anchor .service:hover{
+	display: block;
+}
+
+.topNav div.anchor .service{
+	width: 86px;
+	height: 120px;
+	border:2px solid rgb(255, 88, 26);
+	position: absolute;
+	top:-8px;
+	left: -17px;
+	display: none;
+
+}
+.topNav div.anchor .service a{
+	float: left;
+	width: 69px;
+	height: 30px;
+	padding-left:17px;
+	font-size: 14px;
+	background: white; 
+}
+.topNav div.anchor .service a:hover{
+	color: #ff571a;
+}
+.topNav input{
+	float:left;
+	margin-right:65px;
+	padding:0 8px;
+	width:200px;
+	height:28px;
+	border:2px solid rgb(230, 230, 230);
+	line-height:28px;
+	outline:none;
+}
+.topNav input:focus{
+	border-color:rgb(204, 204, 204);
+}
+.topNav .sign{
+	float:left;
+	margin-right:15px;
+	font-size:12px;
+	line-height:36px;
+}
+.topNav .sign:hover{
+	color: #ff571a;
+}
+.topNav .tel{
+	float:right;
+	width:154px;
+	height:36px;
+}
+.topNav.normal{
+	position:absolute;
+}
+.topNav.fixed{
+	position:fixed;
+	z-index:2;
+}
+/*底部导航*/
+.bottomNav{
+	height:400px;
+	background-color:rgb(31, 31, 31);
+
+}
+/*侧边栏*/
+.fixedNav{
+	position:fixed;
+	right:0;
+	bottom:50px;
+	width:52px;
+	height:284px;
+	z-index:1;
+	transition:width .25s;
+}
+.fixedNav:hover{
+	width:80px;
+}
+.fixedNav:hover .anchor span{
+	width:auto;
+}
+.fixedNav div{
+	height:34px;
+	overflow:hidden;
+	background-color:rgb(255, 88, 26);
+	text-indent:14px;
+	font-size:14px;
+	line-height:34px;
+	color:white;
+}
+.fixedNav .anchor{
+	float:left;
+	width:100%;
+	height:54px;
+	overflow:hidden;
+	background-color:rgb(247, 247, 247);
+	border-bottom:1px solid rgb(230, 230, 230);
+	border-left:1px solid rgb(230, 230, 230);
+	font-size:12px;
+	color:rgb(102, 102, 102);
+}
+.fixedNav .anchor:hover{
+	background-color:white;
+}
+.fixedNav .anchor .icon{
+	margin:10px 0 8px 18px;
+	display:block;
+	width:16px;
+	height:16px;
+	background-size:0;
+	background-color:black;
+}
+.fixedNav .anchor .favor{
+	background-position:;
+}
+.fixedNav .anchor .consult{
+	background-position:;
+}
+.fixedNav .anchor .sell{
+	background-position:;
+}
+.fixedNav .anchor .feedback{
+	background-position:;
+}
+.fixedNav .anchor span{
+	margin-left:16px;
+	display:block;
+	width:24px;
+	height:12px;
+	overflow:hidden;
+}
+.btnTop{
+	position:fixed;
+	right:0;
+	bottom:50px;
+	width:52px;
+	height:25px;
+	background-color:rgb(51, 51, 51);
+	text-align:center;
+	font-size:12px;
+	line-height:25px;
+	color:white;
+	cursor:pointer;
+	z-index:1;
+}
+
+/*底部导航*/
+.bottomNav{
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    background-color: #1f1f1f;
+    padding-top:30px;
+
+
+}
+.bottomNav .divmain{
+    margin-top: 30px;
+    width: 1180px; 
+    height: 160px;
+    margin: 0 auto;
+
+}
+.bottomNav .divmain li{
+	float: left;
+}
+.bottomNav .divmain li{
+    
+    width: 190px;
+    float: left;
+    
+}
+.bottomNav .divmain li a{
+    display: block;
+    height: 25px;
+    color: #717171;
+    line-height: 25px;
+    font-size: 12px;
+}
+.bottomNav .divmain li a:nth-of-type(1){
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.bottomNav .pic{
+	float: left;
+    width: 190px;
+    margin-bottom: 30px;
+}
+.bottomNav .pic .sys{
+	width: 66px;
+    height: 66px;
+    display: block;
+    margin: 0 auto;
+}
+.bottomNav .pic span{
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.bottomNav div{
+    width: 1180px;
+    margin:0 auto;
+    line-height: 25px;
+}
+.bottomNav div span{
+    color: #717171;
+    font-size: 12px;
+}
+.bottomNav div a{
+    margin-left: 10px;
+    color: #717171;
+    font-size: 12px;
+
+
+}
+.bottomNav .divF{
+	width: 1180px;
+    margin:0 auto;
+    margin-top: 30px;
+	border-bottom: 1px solid #363636;
+    border-top: 1px solid #363636;
+    padding: 10px 0;
+	line-height: 1;
+
+}
+.bottomNav .divF a{
+	display: inline-block;
+	margin-right: 25px;
+
+}
+.bottomNav p{
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 10px;
+	color: #717171;
+	font-size: 12px;
+}
+.clearfix{
+	clear: both;
+}
+#login{
+	width: 400px;
+	height: 450px;
+	background-color: white;
+	position: fixed;
+	left: 751.5px;
+	top:180px;
+	box-shadow: 1px 4px 4px 1px #CDCDCD;
+	z-index: 10;
+}
+.hid{
+	display: none;
+
+}
+#login .content{
+	padding: 20px;
+}
+#login .content .title span{
+	font-size: 18px;
+	color: #333;
+}
+#login .content .title .right{
+	float:right; 
+	cursor: pointer;
+}
+#login .content .box{
+	width:255px;
+	margin: 0 auto;
+}
+#login .content .box #err{
+	margin-top: 10px;
+	height: 35px;
+}
+#login .content .box #err span{
+	display: block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #f29797;
+    background-color: #ffe8ef;
+    color: #ee394b;
+    text-align: center;
+    margin:0 auto;
+}
+#login .content .box label{
+	display: block;
+	color: #444;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+#login .content .box #tel{
+	width: 244px;
+	height: 20px;
+	padding: 5px 0 5px 7px;
+}
+#login .content .box #code{
+	width: 135px;
+	height: 20px;
+	padding: 5px 0 5px 7px;
+}
+#login .content .box #btnCode{
+	height: 35px;
+	width: 100px;
+	border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    background-color: #f5f5f5;
+    font-size: 12px;
+    color: #333;
+    margin-left: 5px;
+    cursor: pointer;
+    line-height: 35px;
+}
+#login .content .box #btnSubmit{
+	margin-top: 20px;
+	width: 100%;
+	color: white;
+    font-size: 16px;
+    background-color: #FF5517;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    height: 35px;
+}

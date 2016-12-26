@@ -1,0 +1,38 @@
+h1 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+.main .brand{
+	margin-bottom:20px; 
+	width:100%;
+	float: left;
+} 
+.main .brand span{
+	font-size: 20px;
+    font-weight: bold;
+    color: #666;
+    float: left;
+    width: 50px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #999;
+}
+.main .brand .cont{
+	float: left;
+	margin-left:20px;
+	width: 1000px; 
+}
+.main .brand .cont a{
+	margin-right: 15px;
+    color: #666;
+    line-height: 30px;
+    font-size: 14px;
+}
+.brand .cont a:hover {
+    color: #ff571a;
+}
