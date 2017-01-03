@@ -1,4 +1,4 @@
-document.getElementById("top").onclick = function(){
+	document.getElementById("top").onclick = function(){
 	scrollTo(0, 0);
 };
 var divMain = document.createElement("div");
@@ -17,15 +17,15 @@ var settings1 = [
 	},
 	{
 			name : "城市大全",
-			href : ""
+			href : "./city.html"
 	},
 	{
 			name : "品牌大全",
-			href : ""
+			href : "./brand.html"
 	},
 	{
 			name : "车系大全",
-			href : ""
+			href : "./carType.html"
 	}
 ];
 var settings2 = [
@@ -35,15 +35,15 @@ var settings2 = [
 	},
 	{
 			name : "如何挑选二手车",
-			href : ""
+			href : "./how.html"
 	},
 	{
 			name : "如何判断事故火烧水浸车",
-			href : ""
+			href : "./judge.html"
 	},
 	{
 			name : "二手车指标说明",
-			href : ""
+			href : "./explain.html"
 	}
 ];
 var settings3 = [
@@ -60,7 +60,7 @@ var settings3 = [
 			href : ""
 	},
 	{
-			name : "风车",
+			name : "大风车",
 			href : ""
 	},
 	{

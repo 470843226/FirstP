@@ -25,7 +25,7 @@
 				</div>
 				<a class="anchor" href="./index.html">首页</a>
 				<a class="anchor"  href="./buy.html">我要买车</a>
-				<a class="anchor"  href="/sell">我要卖车</a>
+				<a class="anchor"  href="./sell.html">我要卖车</a>
 				<div class="anchor">商家服务
 					<div class="service">
 						<a href="" style="margin-top: 60px;">大风车</a>
@@ -34,8 +34,8 @@
 				</div>
 				<a class="anchor"  href="/about">关于我们</a>
 				<input placeholder="搜索" />
-				<a class="sign" href="/signIn">登录</a>
-				<a class="sign" href="/signUp">注册</a>
+				<a class="sign" id="signIn">登录</a>
+				<a class="sign" id="signUp">注册</a>
 				<div class="icon tel"></div>
 			</div>
 		</div>
@@ -227,6 +227,28 @@
 		<a class="btnTop" id="top">TOP</a>
 		<script src="./js/util.js"></script>
 		<script src="./js/core.js"></script>
-		<script src="./js/buy.js"></script>
+
+		<div id="login" class="hid">
+			<div class="content">
+				<div class="title">
+					<span class="left" id="left">注册</span>
+					<span class="right" id="close">X</span>
+				</div>
+				<div class="box">
+					<div id="err">
+					</div>
+					<form action="" method="post">
+						<label>手机号：</label>
+						<input id="tel" name="tel" placeholder="请输入手机号" />
+						<label>验证码：</label>
+						<input id="code" name="code" placeholder="请查收短信" />
+						<input id="btnCode" type="button" value="获取验证码" />
+						<input id="btnSubmit" type="submit" value="注册" />
+					</form>
+				</div>
+			</div>
+		</div>	
+		<script src="./js/sign.js"></script>
+			
 	</body>
 </html>

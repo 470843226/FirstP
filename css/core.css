@@ -251,20 +251,30 @@ body{
 	display:block;
 	width:16px;
 	height:16px;
-	background-size:0;
-	background-color:black;
+	background-image:url(../image/icon2.png);
 }
-.fixedNav .anchor .favor{
-	background-position:;
+.fixedNav .anchor:hover .favor{
+	background-position:0 -20px;
 }
 .fixedNav .anchor .consult{
-	background-position:;
+	background-image:url(../image/consult.png);
+}
+.fixedNav .anchor:hover .consult{
+	background-position:-3px -2px;
+	background-image:url(../image/consult1.png);
 }
 .fixedNav .anchor .sell{
-	background-position:;
+	background-position:-40px -40px;
 }
+.fixedNav .anchor:hover .sell{
+	background-position:-40px -60px;
+}
+
 .fixedNav .anchor .feedback{
-	background-position:;
+	background-position:-80px 0;
+}
+.fixedNav .anchor:hover .feedback{
+	background-position:-80px -20px;
 }
 .fixedNav .anchor span{
 	margin-left:16px;
